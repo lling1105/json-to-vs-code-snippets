@@ -15,7 +15,8 @@ fs.readdirSync(process.cwd()).forEach(file => {
             "prefix":"template",
             "body":[
                 JSON.stringify(json_obj,null,'\t')
-            ]
+            ],
+            "description":""
         }
     }
 });
