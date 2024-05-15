@@ -4,7 +4,7 @@
   "description": "convert json object to vs code snippets and keep formatted",
   "main": "index.js",
   "scripts": {
-    "build": "pkg index.js"
+    "build": "pkg -t node14-win-x64 -C GZip -o json-to-vs-code-snippets index.js"
   },
   "repository": {
     "type": "git",
