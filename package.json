@@ -1,0 +1,25 @@
+{
+  "name": "json-to-vs-code-snippets",
+  "version": "1.0.0",
+  "description": "convert json object to vs code snippets and keep formatted",
+  "main": "index.js",
+  "scripts": {
+    "build": "pkg index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lling1105/json-to-vs-code-snippets.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lling1105/json-to-vs-code-snippets/issues"
+  },
+  "homepage": "https://github.com/lling1105/json-to-vs-code-snippets#readme",
+  "dependencies": {
+    "fs-extra": "^11.2.0"
+  },
+  "devDependencies": {
+    "pkg": "^5.8.1"
+  }
+}
