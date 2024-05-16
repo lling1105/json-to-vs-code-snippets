@@ -15,9 +15,12 @@ fs.readdirSync(process.cwd()).forEach(file => {
             "prefix":"template",
             "body":[
                 JSON.stringify(json_obj,null,'\t')
-            ],
-            "description":""
+                    .replace(/"\$/ig,'"\\$')
+                    .replace(/{\n(\t)+/ig, '{')
+                    .replace(/\n[\t]+}/ig, '}')
+                    .replace(/\n}/ig,'}')
+            ]
         }
     }
 });
-fse.writeJsonSync(`${root_folder_name}.code-snippets`,code_snippets,{spaces:'\t'});
+fse.writeJsonSync(`${root_folder_name}.code-snippets`,code_snippets,{spaces:' '});

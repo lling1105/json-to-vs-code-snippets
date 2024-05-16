@@ -9,3 +9,20 @@
     }
   ]
 }
+{"name": "script-name",
+  "excel": "",
+  "actions": [
+    {"name": "main loop",
+      "loop": {"key": "",
+        "sheet": "",
+        "rows": [
+          ""
+        ]},
+      "actions": [
+        {"$ref": "./__common/(动态).json?表=案件基本信息"},
+        {"$ref": "./__common/页搜索号并进入详情页.json?表=基本信息&列=系统案号"},
+        {"$ref": "./__common/__base/主界面左侧导航菜单.json?左侧导航菜单项=期系统"},
+        {"name": "todo",
+          "actions": []}
+      ]}
+  ]}
