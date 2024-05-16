@@ -2,6 +2,7 @@ const fse = require('fs-extra');
 const path = require('path');
 const fs = require('fs');
 
+//array to list which file need compact in one line without formate
 const one_line_templates_configs_file = path.join(process.cwd(), 'one_line_templates.json');
 const one_line_templates = fse.existsSync(one_line_templates_configs_file) ? fse.readJsonSync(one_line_templates_configs_file) : [];
 
