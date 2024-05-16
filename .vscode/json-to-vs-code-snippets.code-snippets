@@ -1,4 +1,11 @@
 {
+ "one_line_templates": {
+  "scope": "javascript,typescript,json",
+  "prefix": "template",
+  "body": [
+   "[\n\t\"test2\"\n]"
+  ]
+ },
  "package-lock": {
   "scope": "javascript,typescript,json",
   "prefix": "template",
@@ -31,7 +38,7 @@
   "scope": "javascript,typescript,json",
   "prefix": "template",
   "body": [
-   "{\"name\": \"json-to-vs-code-snippets\",\n\t\"children\": [\n\t\t{\"c1\": 1},\n\t\t{\"c2\": 2}\n\t]}"
+   "{\"name\": \"json-to-vs-code-snippets\",\"children\": [{\"c1\": 1},{\"c2\": 2}]}"
   ]
  }
 }
